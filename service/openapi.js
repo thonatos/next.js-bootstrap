@@ -1,6 +1,5 @@
-// const Client = require('aliyun-api-gateway').Client
 const config = require('../config.prod')
-const Client = require('./api-gateway-nodejs-sdk').Client
+const Client = require('aliyun-api-gateway').Client
 
 Date.prototype.Format = function (fmt) { //author: meizz   
   var o = {
