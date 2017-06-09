@@ -22,13 +22,6 @@ cp config.js config.prod.js
 # change ak/sk to yours.
 ```
 
-### api-gateway-nodejs-sdk
-
-```
-cd service 
-git clone https://github.com/aliyun/api-gateway-nodejs-sdk
-```
-
 ### run
 
 ```
