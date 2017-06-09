@@ -1,0 +1,36 @@
+:global * {
+    box-sizing: border-box;
+    font-family: Noto Sans CJK SC, Source Han Sans CN, Source Han Sans TC, Source Han Sans, Nimbus Sans L, Liberation Sans, Hiragino Sans GB, Nota Han Sans, Microsoft YaHei, Droid Sans, Droid Sans Fallback, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
+}
+
+:global * :after,
+:global * :before {
+    box-sizing: border-box;
+}
+
+:global html,
+:global body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+
+:global a {
+    text-decoration: none;
+}
+
+:global(.container) {
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: hidden;
+}
+
+.wrap {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    padding: 80px 0 0 0
+}
