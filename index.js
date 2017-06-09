@@ -25,7 +25,7 @@ app.prepare()
         server.use(bodyParser.json())
         server.use(cookieSession({
             name: 'session',
-            keys: ['swz'],
+            keys: ['impl'],
             maxAge: 24 * 60 * 60 * 1000 // 24 hours
         }))
 
