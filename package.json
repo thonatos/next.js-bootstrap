@@ -1,29 +1,25 @@
 {
-  "name": "short-url",
-  "description": "URL shortener using Node.js and Redis",
+  "name": "next.js-bootstrap",
+  "description": "next.js-bootstrap",
   "version": "0.0.1",
   "author": "Thonatos.Yang <thonatos.yang@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:thonatos/shortURL.git"
+    "url": "git@github.com:thonatos/next.js-bootstrap.git"
   },
   "dependencies": {
     "aliyun-api-gateway": "^1.1.0",
     "antd": "^2.10.4",
     "axios": "^0.16.1",
-    "body-parser": "^1.15.1",
-    "bs58": "^4.0.1",
+    "body-parser": "^1.15.1",    
     "cookie-session": "^2.0.0-beta.2",
     "cors": "^2.7.1",
-    "express": "^4.15.3",
-    "ioredis": "^2.4.3",
+    "express": "^4.15.3",    
     "morgan": "^1.7.0",
-    "next": "^3.0.0-beta6",
-    "qr-image": "^3.1.0",
+    "next": "^3.0.0-beta6",    
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "validator": "^6.2.0"
+    "react-dom": "^15.5.4"    
   },
   "scripts": {
     "dev": "NODE_ENV=development && node index.js",
@@ -35,9 +31,7 @@
   "devDependencies": {
     "babel-plugin-css-modules-transform": "^1.2.7",
     "babel-plugin-import": "^1.2.1",
-    "cssnano": "^3.10.0",
-    "less": "^2.7.2",
-    "less-plugin-clean-css": "^1.5.1",
+    "cssnano": "^3.10.0",        
     "postcss-loader": "^2.0.5",
     "postcss-modules": "^0.8.0",
     "skeleton-loader": "^1.1.3",
