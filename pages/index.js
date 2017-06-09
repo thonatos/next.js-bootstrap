@@ -1,7 +1,6 @@
-import Layout from '../components/Layout'
 import React, { Component } from 'react'
 import Head from 'next/head'
-import { Button } from 'antd'
+import Layout from '../components/Layout'
 
 import {stylesheet, classNames} from './index.css'
 
@@ -31,8 +30,7 @@ class Index extends Component {
 
     return (
       <Layout>
-        <Head><style dangerouslySetInnerHTML={{__html: stylesheet}} /></Head>             
-        <Button type="primary">Primary</Button>
+        <Head><style dangerouslySetInnerHTML={{__html: stylesheet}} /></Head>                     
         <div className={classNames.index}>
           {
             cards.map((v, k) => {

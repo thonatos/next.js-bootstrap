@@ -29,8 +29,8 @@
     "dev": "NODE_ENV=development && node index.js",
     "build": "NODE_ENV=production && ./node_modules/next/dist/bin/next build",
     "start": "NODE_ENV=production && node index.js",    
-    "antd": "cp node_modules/antd/dist/antd.min.css static/css/antd.min.css"
-    // "theme": "lessc --clean-css node_modules/antd/lib/style/index.less ./static/css/antd.min.css"
+    "antd": "cp node_modules/antd/dist/antd.min.css static/css/antd.min.css",
+    "theme": "lessc --clean-css node_modules/antd/lib/style/index.less ./static/css/antd.min.css"    
   },
   "devDependencies": {
     "babel-plugin-css-modules-transform": "^1.2.7",

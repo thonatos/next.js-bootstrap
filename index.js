@@ -32,9 +32,17 @@ app.prepare()
 
         server.use('/', require('./routes/counter'))
 
-        // pages
+        // status
         server.get('/status', (req, res) => {
-            return app.render(req, res, '/status', [])
+            // pass data
+            let query = {
+                name: 'data',
+                params: {
+                    path: '/status',
+                    counter: req.counter
+                }
+            }
+            return app.render(req, res, '/status', query)
         })
 
         server.get('*', (req, res) => {

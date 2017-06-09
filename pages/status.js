@@ -1,27 +1,29 @@
+import React, { Component } from 'react'
 import Layout from '../components/Layout'
 
-const features = [
-  '关键字、技术栈：React.js & Next.js & Express.js',
-  '短连算法：base58作为短连接生成算法（减少oO0等字符干扰）'
-]
+class Status extends Component {
+  render() {
+    const { name, params } = this.props.query
+    return (
+      <Layout>
+        <div className="container">
+          <h2>#Status</h2>
+          <article>
+            <h3>data passed from express.</h3>
+            <p>#name: {name}</p>
+            <p>#params: {JSON.stringify(params)}</p>
+          </article>
+        </div>
+      </Layout>
+    )
+  }
+}
 
-export default () => (
-  <Layout>
-    <div className="container">
-      <h2>About</h2>
-      <div>
-        <ul>
-          {
-            features.map((v, k) => {
-              return (
-                <li key={k}>
-                  <p>{v}</p>
-                </li>
-              )
-            })
-          }
-        </ul>
-      </div>
-    </div>
-  </Layout>
-)
+Status.getInitialProps = function (ctx) {
+  const query = ctx.query  
+  return {
+    query
+  }
+}
+
+export default Status
