@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import { Layout } from '../components/'
 
-import {stylesheet, classNames} from './index.css'
+import { stylesheet, classNames } from './index.css'
 
 const Card = ({ post }) => {
   return (
@@ -30,7 +30,7 @@ class Index extends Component {
 
     return (
       <Layout>
-        <Head><style dangerouslySetInnerHTML={{__html: stylesheet}} /></Head>                     
+        <Head><style dangerouslySetInnerHTML={{ __html: stylesheet }} /></Head>
         <div className={classNames.index}>
           {
             cards.map((v, k) => {
@@ -40,7 +40,7 @@ class Index extends Component {
                 </div>
               )
             })
-          }          
+          }
         </div>
       </Layout>
     )

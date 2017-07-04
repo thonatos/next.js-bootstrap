@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
+import { Layout } from '../components/'
 
 class Status extends Component {
   render() {
@@ -20,7 +20,7 @@ class Status extends Component {
 }
 
 Status.getInitialProps = function (ctx) {
-  const query = ctx.query  
+  const query = ctx.query
   return {
     query
   }

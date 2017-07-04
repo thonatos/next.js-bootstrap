@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
+import { Layout } from '../components/'
 import { Row, Col, Button } from 'antd'
 
 class Components extends Component {
