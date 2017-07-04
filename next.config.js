@@ -23,7 +23,7 @@ module.exports = {
 
                 return ['module.exports = {',
                   `classNames: ${classNames},`,
-                  `stylesheet: \`${content}\``,
+                  `stylesheet: \'${content}\'`,
                   '}'
                 ].join('')
               }
